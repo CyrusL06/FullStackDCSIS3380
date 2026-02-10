@@ -22,3 +22,6 @@ By using Link this allows us to change URL by not fully reloading one...
 
 
 SHows how to say pageNotFOund and exporting the data inputted
+
+
+useParams -> returns parameters

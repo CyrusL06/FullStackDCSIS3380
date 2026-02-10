@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Link, Outlet, useParams } from "react-router-dom";
 
 
 export const Services = () => {
@@ -61,20 +61,32 @@ export const Products = () => {
   return (
     <div>
       <h1>Products</h1>
+       <ul style={{fontSize:"2em", color:"green", listStyle:"none"}}>
+          <li> <Link to="1">Product1</Link> </li>
+          <li> <Link to="2">Product2</Link> </li>
+          <li> <Link to="3">Product3</Link> </li>
+       </ul>
     </div>
   );
 
 };
 export const ProductDetails = () => {
+  console.log(useParams());
   const products = [
     { id: 1, name: "Laptop", desc: "About Laptops..." },
     { id: 2, name: "Notepad", desc: "About Notepads..." },
     { id: 3, name: "Smart Phone", desc: "About Smart Phones..." },
   ];
+  // Destructure because it returns an object
+  //Get ahold of URL parameter
   let { id } = useParams();
+  //COnvert to int
   id = parseInt(id);
   console.log(useParams());
+
+  //Inside product you find the product where it match id 
   const product = products.find((prod) => prod.id == id);
+  
   console.log(product);
   return (
     <>
@@ -84,6 +96,16 @@ export const ProductDetails = () => {
     </>
   );
 };
+
+export const EventDetails = () => {
+  const {month, year} = useParams()
+  return (
+      <div>
+          <h6>The events detail are this {month} {year}</h6>
+      </div>
+  );
+}
+
 export const Contact = () => {
   return (
     <div>
