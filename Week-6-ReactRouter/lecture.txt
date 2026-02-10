@@ -1,0 +1,24 @@
+
+We Installed:
+
+To practice with the  REACT DOM:
+
+THis package enable ROUTING -> npm react-router-dom query-string
+npm i bootstrap react-icons
+
+Allows us to instantiate the style
+Import: Main.jsx
+import "bootstrap/dist/css/bootstrap.css"
+
+
+
+import {BrowserRouter} from "react-router-dom
+
+Instead of anchor and ref -> its a full reload but we dont need that 
+So we used LInk and to to
+
+
+By using Link this allows us to change URL by not fully reloading one...
+
+
+SHows how to say pageNotFOund and exporting the data inputted
