@@ -389,7 +389,7 @@
   font-weight: 700;
 }
 
-.status-todo .status-pill {
+/* .status-todo .status-pill {
   color: #ffd8ac;
 }
 
@@ -399,7 +399,7 @@
 
 .status-done .status-pill {
   color: #9af4ca;
-}
+} */
 
 .status-done .task-copy h3 {
   text-decoration: line-through;

@@ -1,0 +1,32 @@
+export const demoTasks = [
+  {
+    id: "task-1",
+    title: "Review React component lifecycle",
+    description: "Write examples for mount, update, and unmount scenarios.",
+    course: "CSIS 3380",
+    due: "Feb 25",
+    priority: "High",
+    status: false,
+    statusClass: "todo",
+  },
+  {
+    id: "task-2",
+    title: "Practice SQL joins with sample data",
+    description: "Build 5 join queries and explain each result set.",
+    course: "Database",
+    due: "Feb 26",
+    priority: "Medium",
+    status: false,
+    statusClass: "done",
+  },
+  {
+    id: "task-3",
+    title: "Create API route notes",
+    description: "Summarize GET, POST, PUT, and DELETE examples.",
+    course: "Backend",
+    due: "Feb 27",
+    priority: "Low",
+    status: true,
+    statusClass: "done",
+  },
+];
