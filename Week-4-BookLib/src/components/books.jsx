@@ -1,7 +1,7 @@
 import React from 'react'
 import Book from './book'
 
-const Books = ({books}) => {
+const Books = ({books, onHeartPressed}) => {
 
   if(books.length === 0)
     return <h2>Currently {books.length}</h2>
@@ -19,8 +19,7 @@ const Books = ({books}) => {
             <th>Liked</th>
             <th>Action(s)</th>
         </tr>
-      {books.map((book,i) => <Book book ={book} key={book._id} />)}
-
+       {books.map((book) => <Book book ={book} key={book._id} onHeartPressed = {onHeartPressed}/>)}
     </thead>
     </table>
   

@@ -1,6 +1,6 @@
 import Color from './color'
 
-const ColorList = ({colors, onDelete, rateColor}) => {
+const   ColorList = ({colors, onDelete, rateColor}) => {
     if(!colors.length)
         return <h2>There are no colors. Add one</h2>
         

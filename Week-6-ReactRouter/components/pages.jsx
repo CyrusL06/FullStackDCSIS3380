@@ -1,5 +1,5 @@
-import { Link, Outlet, useParams } from "react-router-dom";
-
+import { Link, Outlet, useParams, useLocation } from "react-router-dom";
+//  import {queryString} from "query-string"
 
 export const Services = () => {
   return (<section>
@@ -99,6 +99,15 @@ export const ProductDetails = () => {
 
 export const EventDetails = () => {
   const {month, year} = useParams()
+  let location = useLocation();
+  console.log(useParams())
+  console.log(location)
+
+  // let {search} = location
+  // let obj = queryString.parse(search)
+  // console.log(obj)
+  // console.log(search)
+
   return (
       <div>
           <h6>The events detail are this {month} {year}</h6>

@@ -1,11 +1,10 @@
 import React from 'react'
-import { useState } from 'react'
 import {FaHeart, FaTrash} from "react-icons/fa"
 
 
-const Book = ({book}) => {
+const Book = ({book, onHeartPressed}) => {
 
-  const [heart, setHeart] = useState(false)
+  
 
   return (
       <tr>
@@ -16,7 +15,7 @@ const Book = ({book}) => {
             <th>{book.numberInStock}</th>
             <th>{book.price}</th>
             <th>{book.publishYear}</th>
-            <th><FaHeart color={book.liked?"red":"grey"}/></th>
+            <th><FaHeart onClick={() => onHeartPressed(book._id)} color={book.liked ? "red" : "gray"}/></th>
             <th><FaTrash/></th>
         </tr>
   )
