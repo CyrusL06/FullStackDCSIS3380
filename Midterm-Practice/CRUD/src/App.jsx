@@ -109,8 +109,11 @@ const onEditStart = (task) => {
          onEditStart = {onEditStart}
          onEditChange = {onEditChange}
          onEditCancel = {onEditCancel}
+         
          editingTaskId = {editTaskId}
            editDraft={editDraft}
+        
+
         onToggleStrike = {onToggleStrike}
 
          onDelete= {onDelete} 
