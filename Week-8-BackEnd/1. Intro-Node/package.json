@@ -4,7 +4,7 @@
   "description": "this contains files to test internal and external modules",
   "license": "ISC",
   "author": "Cyrus L",
-  "type": "commonjs",
+  "type": "module", 
   "main": "one.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
